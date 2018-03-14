@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.cricketscorecounter.MainActivity">
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/cricket"
         android:src="@drawable/a2" />
 
     <LinearLayout
@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
-                android:text="Team A"
+                android:text="@string/teama"
                 android:textColor="#000000"
                 android:textSize="15sp" />
 
@@ -42,8 +42,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:textStyle="bold"
-                    android:layout_toLeftOf="@+id/divide_a"
-                    android:text="0"
+                    android:layout_toStartOf="@+id/divide_a"
+                    android:text="@string/zero"
                     android:textColor="#000000"
                     android:textSize="20sp" />
 
@@ -52,7 +52,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="/"
+                    android:text="@string/slash"
                     android:textStyle="bold"
                     android:textColor="#000000"
                     android:textSize="20sp" />
@@ -63,8 +63,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:layout_toRightOf="@id/divide_a"
-                    android:text="0"
+                    android:layout_toEndOf="@id/divide_a"
+                    android:text="@string/zero"
                     android:textStyle="bold"
                     android:textColor="#000000"
                     android:textSize="20sp" />
@@ -78,7 +78,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
                 android:onClick="displaySixOnTeamA"
-                android:text="six" />
+                android:text="@string/six" />
 
             <Button
                 android:layout_width="match_parent"
@@ -88,7 +88,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
                 android:onClick="displayFourOnTeamA"
-                android:text="four" />
+                android:text="@string/four" />
 
             <Button
                 android:layout_width="match_parent"
@@ -98,7 +98,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
                 android:onClick="displayTwoOnTeamA"
-                android:text="Two" />
+                android:text="@string/two" />
 
             <Button
                 android:layout_width="match_parent"
@@ -108,7 +108,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
                 android:onClick="displayOneOnTeamA"
-                android:text="One" />
+                android:text="@string/one" />
 
             <Button
                 android:layout_width="match_parent"
@@ -118,7 +118,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
                 android:onClick="displayWideOnTeamA"
-                android:text="Wide" />
+                android:text="@string/wide" />
 
             <Button
                 android:layout_width="match_parent"
@@ -128,7 +128,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
                 android:onClick="displayNoBAllOnTeamA"
-                android:text="No Ball" />
+                android:text="@string/noball" />
 
             <Button
                 android:layout_width="match_parent"
@@ -138,7 +138,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
                 android:onClick="displayOutOnTeamA"
-                android:text="Out" />
+                android:text="@string/out" />
         </LinearLayout>
 
         <TextView
@@ -160,7 +160,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
-                android:text="Team B"
+                android:text="@string/teamb"
                 android:textColor="#000000"
                 android:textSize="15sp" />
 
@@ -173,8 +173,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_toLeftOf="@+id/divide_b"
-                    android:text="0"
+                    android:layout_toStartOf="@+id/divide_b"
+                    android:text="@string/zero"
                     android:textColor="#000000"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
@@ -184,7 +184,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="/"
+                    android:text="@string/slash"
                     android:textColor="#000000"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
@@ -195,8 +195,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:layout_toRightOf="@id/divide_b"
-                    android:text="0"
+                    android:layout_toEndOf="@id/divide_b"
+                    android:text="@string/zero"
                     android:textColor="#000000"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
@@ -210,7 +210,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
                 android:onClick="displaySixOnTeamB"
-                android:text="six" />
+                android:text="@string/six" />
 
             <Button
                 android:layout_width="match_parent"
@@ -220,7 +220,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
                 android:onClick="displayFourOnTeamB"
-                android:text="four" />
+                android:text="@string/four" />
 
             <Button
                 android:layout_width="match_parent"
@@ -230,7 +230,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
                 android:onClick="displayTwoOnTeamB"
-                android:text="Two" />
+                android:text="@string/two" />
 
             <Button
                 android:layout_width="match_parent"
@@ -240,7 +240,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
                 android:onClick="displayOneOnTeamB"
-                android:text="One" />
+                android:text="@string/one" />
 
             <Button
                 android:layout_width="match_parent"
@@ -250,7 +250,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
                 android:onClick="displayWideOnTeamB"
-                android:text="Wide" />
+                android:text="@string/wide" />
 
             <Button
                 android:layout_width="match_parent"
@@ -260,7 +260,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
                 android:onClick="displayNoBAllOnTeamB"
-                android:text="No Ball" />
+                android:text="@string/noball" />
 
             <Button
                 android:layout_width="match_parent"
@@ -270,7 +270,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
                 android:onClick="displayOutOnTeamB"
-                android:text="Out" />
+                android:text="@string/out" />
         </LinearLayout>
     </LinearLayout>
 
@@ -281,5 +281,6 @@
         android:layout_centerInParent="true"
         android:layout_margin="5dp"
         android:onClick="reset"
-        android:text="Reset" />
+        android:text="@string/reset" />
+
 </RelativeLayout>
