@@ -8,8 +8,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="center"
-        android:src="@drawable/a7" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/a2" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,17 +33,19 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                >
 
                 <TextView
                     android:id="@+id/team_a_score"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
+                    android:textStyle="bold"
                     android:layout_toLeftOf="@+id/divide_a"
                     android:text="0"
                     android:textColor="#000000"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/divide_a"
@@ -51,8 +53,9 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="/"
+                    android:textStyle="bold"
                     android:textColor="#000000"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/team_a_out"
@@ -62,8 +65,9 @@
                     android:layout_margin="5dp"
                     android:layout_toRightOf="@id/divide_a"
                     android:text="0"
+                    android:textStyle="bold"
                     android:textColor="#000000"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <Button
@@ -156,7 +160,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
-                android:text="Team A"
+                android:text="Team B"
                 android:textColor="#000000"
                 android:textSize="15sp" />
 
@@ -172,7 +176,8 @@
                     android:layout_toLeftOf="@+id/divide_b"
                     android:text="0"
                     android:textColor="#000000"
-                    android:textSize="15sp" />
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/divide_b"
@@ -181,7 +186,8 @@
                     android:layout_centerInParent="true"
                     android:text="/"
                     android:textColor="#000000"
-                    android:textSize="15sp" />
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/team_b_out"
@@ -192,7 +198,8 @@
                     android:layout_toRightOf="@id/divide_b"
                     android:text="0"
                     android:textColor="#000000"
-                    android:textSize="15sp" />
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
             </RelativeLayout>
 
             <Button
