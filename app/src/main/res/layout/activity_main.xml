@@ -8,7 +8,7 @@
     tools:context="com.example.android.cricketscorecounter.MainActivity">
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="horizontal">
 
 <LinearLayout
@@ -146,43 +146,58 @@
             android:layout_height="wrap_content"
             android:text="six"
             android:layout_gravity="center"
-            android:layout_margin="5dp" />
+            android:layout_margin="5dp"
+            android:onClick="displaySixOnTeamB"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="four"
             android:layout_margin="5dp"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="displayFourOnTeamB"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Two"
             android:layout_margin="5dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:onClick="displayTwoOnTeamB"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="One"
             android:layout_margin="5dp"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="displayOneOnTeamB"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Wide"
             android:layout_margin="5dp"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="displayWideOnTeamB"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="No Ball"
             android:layout_margin="5dp"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="displayNoBAllOnTeamB"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Out"
             android:layout_margin="5dp"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="displayOutOnTeamB"/>
     </LinearLayout>
 </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:onClick="reset"/>
 </RelativeLayout>

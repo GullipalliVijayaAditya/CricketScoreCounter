@@ -45,35 +45,84 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
-    int scoreTeam = 0;
+    int scoreTeamA = 0;
+    int scoreTeamB = 0;
+    int outA = 0;
+    int outB = 0;
 
+/**
+ *  Team A
+ */
     public void displaySixOnTeamA(View v) {
-        scoreTeam = scoreTeam + 6;
-        displayForTeamA(scoreTeam);
+        scoreTeamA = scoreTeamA + 6;
+        displayForTeamA(scoreTeamA);
     }
     public void displayFourOnTeamA(View v) {
-        scoreTeam = scoreTeam + 4;
-        displayForTeamA(scoreTeam);
+        scoreTeamA = scoreTeamA + 4;
+        displayForTeamA(scoreTeamA);
     }
     public void displayTwoOnTeamA(View v) {
-        scoreTeam = scoreTeam + 2;
-        displayForTeamA(scoreTeam);
+        scoreTeamA = scoreTeamA + 2;
+        displayForTeamA(scoreTeamA);
     }
     public void displayOneOnTeamA(View v) {
-        scoreTeam = scoreTeam + 1;
-        displayForTeamA(scoreTeam);
+        scoreTeamA = scoreTeamA + 1;
+        displayForTeamA(scoreTeamA);
     }
     public void displayNoBAllOnTeamA(View v) {
-        scoreTeam = scoreTeam + 1;
-        displayForTeamA(scoreTeam);
+        scoreTeamA = scoreTeamA + 1;
+        displayForTeamA(scoreTeamA);
     }
     public void displayWideOnTeamA(View v) {
-        scoreTeam = scoreTeam + 1;
-        displayForTeamA(scoreTeam);
+        scoreTeamA = scoreTeamA + 1;
+        displayForTeamA(scoreTeamA);
     }
 
     public void displayOutOnTeamA(View v) {
-        scoreTeam = scoreTeam + 1;
-        displayOutForTeamA(scoreTeam);
+        outA = outA + 1;
+        displayOutForTeamA(outA);
+    }
+    /**
+     * Team B
+     */
+    public void displaySixOnTeamB(View v) {
+        scoreTeamB = scoreTeamB + 6;
+        displayForTeamB(scoreTeamB);
+    }
+    public void displayFourOnTeamB(View v) {
+        scoreTeamB = scoreTeamB + 4;
+        displayForTeamB(scoreTeamB);
+    }
+    public void displayTwoOnTeamB(View v) {
+        scoreTeamB = scoreTeamB + 2;
+        displayForTeamB(scoreTeamB);
+    }
+    public void displayOneOnTeamB(View v) {
+        scoreTeamB = scoreTeamB + 1;
+        displayForTeamB(scoreTeamB);
+    }
+    public void displayNoBAllOnTeamB(View v) {
+        scoreTeamB = scoreTeamB + 1;
+        displayForTeamB(scoreTeamB);
+    }
+    public void displayWideOnTeamB(View v) {
+        scoreTeamB = scoreTeamB + 1;
+        displayForTeamB(scoreTeamB);
+    }
+
+    public void displayOutOnTeamB(View v) {
+        outB = outB + 1;
+        displayOutForTeamB(outB);
+    }
+
+    public void reset(View v) {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        outA = 0;
+        outB = 0;
+        displayForTeamA(scoreTeamA);
+        displayOutForTeamA(outA);
+        displayOutForTeamB(outB);
+        displayForTeamB(scoreTeamB);
     }
 }
